@@ -83,12 +83,10 @@ public class Customer {
 
 	/**
 	 * 
-	 * @param number
-	 * @param name
-	 * @param rate
+	 * @param a
 	 */
-	public void addAccount(String number, String name, double rate) {
-            accounts.add(new Account(number,name,rate,this));
+	public void addAccount(Account a) {
+            accounts.add(a);
 	}
 
 }
