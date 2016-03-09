@@ -29,12 +29,14 @@ public class Main {
         
         b1.addAccount("0","Compte Epargne",0.21,b1.getCustomerByNumber(0));
         b1.addAccount("1","Compte Courant",0.4,b1.getCustomerByNumber(0));
+        //b1.addAccount("2","Compte Epargne",0.1,b1.getCustomerByNumber(1));
         
         b1.getAccountByNumber("0").credit(500);
         System.out.println("Compte : " + b1.getAccountByNumber("0").getNumber() + " - Solde: " + b1.getAccountByNumber("0").getBalance());
         b1.getAccountByNumber("0").debit(54.55);
         System.out.println("Compte : " + b1.getAccountByNumber("0").getNumber() + " - Solde: " + b1.getAccountByNumber("0").getBalance());
  
+        //b1.getAccountByNumber("2").credit(1500);
         //System.out.println("Compte : " + b1.getAccountByNumber("2").getNumber() + " - Solde: " + b1.getAccountByNumber("2").getBalance());
 
         
